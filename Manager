@@ -1,0 +1,24 @@
+class Employee {
+    private int id;
+    protected String name;
+    public double salary;
+
+    public Employee(int id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public int getId() {
+        return id;
+    }
+}
+
+public class Manager {
+    public static void main(String[] args) {
+        Employee emp = new Employee(101, "Kani", 60000);
+
+        System.out.println("Employee ID: " + emp.getId());
+        System.out.println("Employee Salary: " + emp.salary);
+    }
+}
